@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Базовые настройки */
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    
+    /* Строгость проверки типов */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    /* Настройки модулей */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    
+    /* Декларации и маппинги */
+    "declaration": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Пути и базовая конфигурация */
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"]
+    },
+    
+    /* Отключение verbatimModuleSyntax (решает проблему с type-only imports) */
+    "verbatimModuleSyntax": false,
+    
+    /* Поддержка Vite */
+    "types": ["vite/client"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
